@@ -1,0 +1,34 @@
+generated: '2026-07-21'
+method: probed
+source: https://www.upcodeacademy.com
+note: >-
+  Provider appears defunct. www.upcodeacademy.com sits behind Cloudflare with a
+  dead origin (HTTP 522 observed at the root on 2026-07-21); the apex
+  upcodeacademy.com times out, upcode.academy refuses connections, and the
+  40tasks.com domain listed by 500 Global does not resolve in DNS. No
+  well-known artifact was retrievable; every path below failed at the origin.
+host: www.upcodeacademy.com
+probed:
+- path: /.well-known/security.txt
+  status: unreachable (curl timeout/error; root of host returns 522)
+  file: null
+- path: /.well-known/openid-configuration
+  status: unreachable (curl timeout/error; root of host returns 522)
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: unreachable (curl timeout/error; root of host returns 522)
+  file: null
+- path: /.well-known/api-catalog
+  status: unreachable (curl timeout/error; root of host returns 522)
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: unreachable (curl timeout/error; root of host returns 522)
+  file: null
+- path: /llms.txt
+  status: unreachable (curl timeout/error; root of host returns 522)
+  file: null
+other_hosts:
+- host: 40tasks.com
+  status: NXDOMAIN (no DNS A record; domain-squatted with spam content by 2023 per Wayback)
+- host: upcode.academy
+  status: connection refused (port 443)
