@@ -30,6 +30,9 @@ description: UpCode Academy was a Singapore-based coding school offering short b
   serves a Cloudflare 522 dead-origin error (a bare default server page by December 2025) and 40tasks.com
   no longer resolves in DNS (domain-squatted since about 2023). No public API surface was found.
 url: https://raw.githubusercontent.com/api-evangelist/upcode-academy/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "No public API surface was found."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
