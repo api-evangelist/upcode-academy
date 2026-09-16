@@ -32,7 +32,7 @@ description: UpCode Academy was a Singapore-based coding school offering short b
 url: https://raw.githubusercontent.com/api-evangelist/upcode-academy/refs/heads/main/apis.yml
 x-api-posture: no-product-api
 x-api-posture-basis: observed
-x-api-posture-note: "No public API surface was found."
+x-api-posture-note: No public API surface was found.
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -41,7 +41,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-09-15'
 x-enrichment:
   date: '2026-07-21'
   status: minimal
@@ -70,3 +70,4 @@ common:
   url: llms/upcode-academy-llms.txt
 - type: WellKnown
   url: well-known/upcode-academy-well-known.yml
+x-status: defunct
